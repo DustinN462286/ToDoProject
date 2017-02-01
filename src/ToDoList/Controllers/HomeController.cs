@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ToDoList.Model;
+using ToDoList.Model.ToDoListViewModel;
 
 namespace ToDoList.Controllers
 {
@@ -13,18 +15,14 @@ namespace ToDoList.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult ToDo()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult EditToDo()
         {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            return View;
         }
 
         public IActionResult Error()
